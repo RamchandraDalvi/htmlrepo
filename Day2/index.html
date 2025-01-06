@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .col-red {
+            color: red;
+        }
+
+        .bg-blue {
+            background-color: gray;
+        }
+
+        #myID {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h5>Here applying inline css using style tag.</h5>
+    <p class="col-red bg-blue">This is p tag.</p>
+    <p class="col-red">This is p tag.</p>
+    <p class="col-red bg-blue">This is p tag.</p>
+    <p class="col-red">This is p tag.</p>
+    <h1 class="col-red">This is h1 tag.</h1>
+
+    <h5>This is iframe Tag</h5>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.869675156795!2d72.99513551078402!3d19.06946678205926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3c1c6aaaacd%3A0x1660edf108a1e4c4!2sAWDIZ%20INSTITUTE%20-%20Vashi%20Navi%20Mumbai!5e0!3m2!1sen!2sin!4v1736065851992!5m2!1sen!2sin"
+        width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- <iframe src="https://www.awdiz.in/"></iframe>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe> -->
+
+    <h5>This is input types</h5>
+
+    <input type="text" />
+    <input type="button" />
+    <input type="checkbox" />
+    <input type="color" />
+    <input type="date" />
+    <input type="datetime-local" />
+    <input type="email" />
+    <input type="file" />
+    <input type="hidden" />
+    <input type="month" />
+    <input type="number" />
+    <input type="password" />
+    <input type="radio" />
+    <input type="range" />
+    <input type="reset" />
+    <input type="search" />
+    <form onsubmit="handleSubmit()"></form>
+    <input type="submit" value="Login" />
+    <button onclick="handleSubmit()"></button>
+    <input type="tel" placeholder="8756555456546541" />
+    <input type="text" />
+    <input type="time" />
+    <input type="url" />
+    <input type="week" />
+
+    <h5>This is form</h5>
+
+    <form onsubmit="handleSubmit(event)">
+        <label for="fname">First Name</label><br />
+        <input type="text" id="fname" value="awdiz" /><br />
+        <label for="lname">Last Name</label><br />
+        <input type="text" id="lname" /><br />
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox">Privacy Policy.</label><br />
+        <input type="submit" value="Login" />
+    </form>
+
+    <h5>This is Radio buttons</h5>
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML" />
+        <label for="html">HTML</label><br />
+        <input type="radio" id="css" name="fav_language" value="CSS" />
+        <label for="css">CSS</label><br />
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript" />
+        <label for="javascript">JavaScript</label>
+    </form>
+<h5>This is checkbox</h5>
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+        <label for="vehicle1">HTML</label><br />
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+        <label for="vehicle2">CSS</label><br />
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+        <label for="vehicle3">JAVASCRIPT</label>
+    </form>
+
+    <label for="car">Choose a car:</label>
+    <select>
+        <option value="null">Select</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JAvASCRIP</option>
+    </select>
+    <input />
+    <textarea rows="5" cols="30"></textarea>
+
+    <button ondblclick="handleSubmit()">Click me.</button>
+</body>
+
+<script>
+    function handleSubmit(event) {
+        event.preventDefault();
+        // alert("Form submitted!");
+        const userFirstName = document.getElementById("fname").value;
+        console.log(userFirstName, "userFirstName");
+    }
+</script>
+
+</html>
