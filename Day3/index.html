@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        input:valid,
+      textarea:valid {
+        background-color: rgb(164, 230, 164);
+      }
+
+      input:invalid,
+      textarea:invalid {
+        background-color: rgb(224, 142, 142);
+      }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Login Form</legend>
+            <label>Name</label> <br />
+            <input required /> <br />
+            <label>Email</label> <br />
+            <input required /> <br />
+            <label>Password</label> <br />
+            <input required /> <br />
+            <input type="submit" /> <br />
+        </fieldset>
+    </form>
+
+
+    
+    <input placeholder="default size of input tag is 20"/><br />
+    <input size="40" placeholder="size is 40"/> <br/>
+    <label for="">Enter minimum 3 and maximum 6 characters or digits only</label>
+    <input minlength="3" maxlength="6" /><br/>
+    <label for="">Enter minimum 3 and maximum 6 characters or digits only</label>
+    <textarea minlength="3" maxlength="6"></textarea><br/>
+    <label for="">Enter digit between 1 to 10 only</label>
+    <input type="number" min="1" max="10" /><br/>
+    <label for="">Text must be minimum 3 characters and maximum 6 characters</label>
+    <input autofocus type="text" pattern="\w{3,6}" /><br/>
+    <label for="">Password length must be 4</label>
+    <input autofocus type="password" pattern="\d{4,4}" /><br/>
+    <label for="">Placeholder</label>
+    <input autofocus placeholder="abc@gmail.com" /><br/>
+    <span title="Hi">It shows a Title</span><br/>
+    <!-- <span title="Hello Everyopne, awadaw, awd">Hello</span>     -->
+    <label for="">Read Only input</label>
+    <input readonly autofocus value="Hello There !!!!"/><br/>
+    <label for="">Disabled input</label>
+    <input disabled autofocus value="Hello There !!!!"/><br/>
+</body>
+
+</html>
