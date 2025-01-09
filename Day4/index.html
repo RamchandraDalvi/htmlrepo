@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        form{
+            margin: 20px 0;
+        }
+        input {
+            margin-top: 10px;
+        }
+
+      img, video {
+        width: 300px; /* Adjust this width as needed */
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>No validate form</h3>
+    <form novalidate>
+      <label>Email :</label>
+      <input required type="email" /><br/>
+      <label>Password :</label>
+      <input type="password" /><br/>
+      <input type="submit" />
+    </form>
+    <img src="../assets/OIP.jpg" />
+    <video controls>
+      <source src="../assets/SampleVideo_1280x720_1mb.mp4" />
+    </video>
+    <audio controls>
+      <source src="../assets/sample-3s.mp3" />
+    </audio>
+  </body>
+</html>
