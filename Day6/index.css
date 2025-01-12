@@ -1,0 +1,179 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  div p{
+    margin: 20px;
+  }
+
+  .shadow1 {
+    text-shadow: 10px 10px;
+}
+  
+  /* Padding Examples */
+  
+  /* Padding on all sides */
+  .padding-all-sides {
+    border: 2px solid;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  /* Padding on top and bottom */
+  .padding-top-bottom {
+    border: 2px solid;
+    padding: 20px 0;
+    margin: 10px;
+  }
+  
+  /* Padding on left and right */
+  .padding-left-right {
+    border: 2px solid;
+    padding: 0 30px;
+    margin: 10px;
+  }
+  
+  /* Padding set for each side individually */
+  .padding-individual {
+    border: 2px solid;
+    padding: 10px 20px 30px 40px;
+    margin: 10px;
+  }
+  
+  /* Large padding */
+  .padding-large {
+    border: 2px solid;
+    padding: 50px;
+    margin: 10px;
+  }
+  
+  /* Outline Examples */
+  
+  /* Solid outline */
+  .outline-solid {
+    border: 2px solid;
+    outline: 5px solid;
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  /* Dotted outline */
+  .outline-dotted {
+    border: 2px solid;
+    outline: 5px dotted;
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  /* Dashed outline */
+  .outline-dashed {
+    border: 2px solid;
+    outline: 5px dashed;
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  /* Double outline */
+  .outline-double {
+    border: 2px solid;
+    outline: 5px double;
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  /* Outline with offset */
+  .outline-offset {
+    border: 2px solid red;
+    outline: 5px solid;
+    outline-offset: 10px;
+    margin: 15px;
+    padding: 20px;
+  }
+  
+  /* Spacing and Indentation Examples */
+  
+  /* Text Indentation */
+  .text-indent {
+    text-indent: 50px;
+    padding: 10px;
+    margin: 20px;
+  }
+  
+  /* Letter Spacing */
+  .letter-spacing {
+    letter-spacing: 5px;
+    padding: 10px;
+    margin: 20px;
+  }
+  
+  /* Word Spacing */
+  .word-spacing {
+    word-spacing: 15px;
+    padding: 10px;
+    margin: 20px;
+  }
+  
+  /* Line Height */
+  .line-height {
+    line-height: 2.5;
+    padding: 10px;
+    margin: 20px;
+  }
+  
+  /* White-Space Examples */
+
+  
+  /* No wrapping */
+  .white-space-nowrap {
+    white-space: nowrap;
+    border: 2px dashed;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  /* Text Decoration Examples */
+  
+  /* Underline */
+  .text-decoration-underline {
+    text-decoration: underline;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  /* Overline */
+  .text-decoration-overline {
+    text-decoration: overline;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  /* Line-through */
+  .text-decoration-line-through {
+    text-decoration: line-through;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  /* Combined decorations */
+  .text-decoration-combined {
+    text-decoration: underline overline line-through;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  /* Decoration style */
+  .text-decoration-style {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: black;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .variant{
+    font-variant: small-caps;
+  }
+  
