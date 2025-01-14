@@ -1,0 +1,153 @@
+/* General font style */
+.font {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Hover effect */
+.hover {
+    text-align: center;
+    font-size: larger;
+    height: 100px;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.hover:hover {
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    background-color: coral;
+}
+
+/* Hidden elements */
+.disNone {
+    display: none;
+}
+
+/* Width and maxWidth with margin auto */
+.width {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-size: larger;
+    height: 100px;
+    width: 500px;
+    background-color: lightgreen;
+}
+
+.maxWidth {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-size: larger;
+    height: 100px;
+    max-width: 500px;
+    background-color: lightgreen;
+}
+
+/* Relative, Absolute, Fixed, and Sticky */
+.relative {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.position1 {
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+    background-color: lightcoral;
+}
+
+.absolute {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.position2 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background-color: royalblue;
+}
+
+.fixed {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.position3 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background-color: lightgreen;
+}
+
+.sticky {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.position4 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background-color: darkslategray;
+    color: white;
+}
+
+/* Overflow sections */
+.overflow {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.visible, .hidden, .scroll, .auto {
+    height: 150px;
+    width: 300px;
+    border: 2px solid black;
+}
+
+.visible {
+    overflow: visible;
+    background-color: lightyellow;
+}
+
+.hidden {
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+.scroll {
+    overflow: scroll;
+    background-color: lightblue;
+}
+
+.auto {
+    overflow: auto;
+    background-color: lightgreen;
+}
+
+/* Center aligned text */
+.center {
+    margin: auto;
+    width: 50%;
+    margin-top: 100px;
+    border: 3px solid darkorange;
+    padding: 5px;
+    background-color: beige;
+}
+
+/* Centered Image */
+.centerImg {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
