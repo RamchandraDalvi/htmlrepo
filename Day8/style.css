@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header styling */
+  h2 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 24px;
+  }
+  
+  /* Flex-wrap container styling */
+  #flexWrapStyles {
+    display: flex;
+    flex-wrap: wrap; /* Ensures child elements wrap to new lines if necessary */
+    justify-content: flex-start; /* Aligns items to the start of the container */
+    width: 100%;
+    gap: 20px; /* Adds space between the child items */
+    padding: 15px;
+    background-color: #e0e0e0; /* Light grey background */
+    overflow: hidden; /* Hides overflow if any */
+    border: 2px solid #ccc; /* Border around the flex container */
+  }
+  
+  /* Individual items inside the flex-wrap container */
+  #flexWrapStyles > div {
+    border: 3px solid #2d3436; /* Dark border for each item */
+    background-color: #ffb6b9; /* Soft red background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #2d3436;
+    height: 100px;
+    width: 30%; /* Adjusts width of child items */
+    min-width: 90px; /* Ensures that items do not shrink too small */
+    box-sizing: border-box; /* Includes padding in width and height */
+  }
+  
+  /* Flex container to demonstrate different flex directions */
+  .flex-container {
+    display: flex;
+    gap: 25px;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .flex-container div {
+    width: 90px;
+    height: 90px;
+    background-color: #fab1a0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #2d3436;
+    border: 2px solid #2d3436;
+  }
+  
+  /* Flex Direction - Row */
+  .flex-row {
+    flex-direction: row;
+  }
+  
+  /* Flex Direction - Row-Reverse */
+  .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+  
+  /* Flex Direction - Column */
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  /* Flex Direction - Column-Reverse */
+  .flex-column-reverse {
+    flex-direction: column-reverse;
+  }
+  
+  /* Justify Content - Space Around */
+  .justify-space-around {
+    justify-content: space-around;
+  }
+  
+  /* Justify Content - Space Between */
+  .justify-space-between {
+    justify-content: space-between;
+  }
+  
+  /* Justify Content - Space Evenly */
+  .justify-space-evenly {
+    justify-content: space-evenly;
+  }
+  
+  /* Justify Content - Center */
+  .justify-center {
+    justify-content: center;
+  }
+  
+  /* Align Items - Center */
+  .align-center {
+    align-items: center;
+  }
+  
+  /* Align Items - Flex End */
+  .align-flex-end {
+    align-items: flex-end;
+  }
+  
