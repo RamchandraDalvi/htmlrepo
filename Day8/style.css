@@ -17,7 +17,6 @@ body {
   #flexWrapStyles {
     display: flex;
     flex-wrap: wrap; /* Ensures child elements wrap to new lines if necessary */
-    justify-content: flex-start; /* Aligns items to the start of the container */
     width: 100%;
     gap: 20px; /* Adds space between the child items */
     padding: 15px;
@@ -59,6 +58,9 @@ body {
     font-size: 16px;
     color: #2d3436;
     border: 2px solid #2d3436;
+  }
+  .flexwrap div{
+    width: 30%;
   }
   
   /* Flex Direction - Row */
