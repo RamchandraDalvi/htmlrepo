@@ -1,94 +1,83 @@
-* {
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-.screen {
+.screen{
     width: 100%;
     height: 100vh;
-    border: 2px solid black;
 }
 
-.navbar {
-    /* border: 5px solid red; */
-    height: 80px;
-    display: flex;
+.navbar{
     width: 94%;
     margin: auto;
-    justify-content: space-between;
+    display: flex;
+    height: 75px;
+    background-color: #ffffff;
 }
-
-.logo {
+.logo{
     flex-grow: 1;
     display: flex;
-    align-items: center;
+    align-items: center ;
 }
-
-.lists {
-    flex-grow: 2;
+.imageStyle{
+    width: 55%;
+    height: 60%;
+}
+.navigations{
+    flex-grow: 3;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 }
-
-.ul {
-    list-style: none;
+.navigations >ul{
     margin: 0;
     padding: 0;
+    width: 100%;
+    list-style: none;
     display: flex;
-    gap: 22px;
+    justify-content: space-around;
 }
-
-.ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.search {
+.search{
     flex-grow: 7;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-
-.search-body {
-    width: 90%;
-    height: 50%;
+.search-inner{
+    background-color: #f5f5f6;
+    width: 94%;
+    height: 40px;
     display: flex;
     align-items: center;
-    gap: 15px;
-    border: 1px solid black;
-    border-radius: 3px;
+    justify-content: center;
 }
-
-.input {
-    width: 100%;
+.search-inner:focus{
+    background-color: #ffffff;
 }
-
-.input .inp {
-    width: 100%;
-    height: 100%;
+.fa-magnifying-glass{
+    font-size: 15px;
+    color: gray;
+    margin-right: 20px;
+}
+.input{
+    width: 90%;
+    height: 90%;
+    background-color: transparent;
     outline: none;
     border: none;
-    padding: 2px;
-    font-size: 15px;
 }
-
-.menu {
+.menu{
     flex-grow: 2;
     display: flex;
-    gap: 4px;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 10px;
 }
-
-.input .inp {
-    width: 90%;
-    background: transparent;
+.inner-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.imageStyle {
-    width: 70%;
-    height: 90%;
+.inner-menu a{
+    color: black;
+    text-decoration: none;
 }
