@@ -1,4 +1,4 @@
-// if else program 
+// if else programs
 
 var number = 21;
 
@@ -134,17 +134,114 @@ switch(num){
     case 7:
         console.log("Sunday");
         break;
+    default:
+        console.log("Enter number range between 1 to 7")
+}
+
+
+var num1 = 24;
+var num2 = 22;
+
+var operation = "-";
+
+switch (operation) {
+    case "+":
+        var result = num1 + num2;
+        console.log("The result of addition is: " + result);
+        break;
+    case "-":
+        var result = num1 - num2;
+        console.log("The result of subtraction is: " + result);
+        break;
+    case "*":
+        var result = num1 * num2;
+        console.log("The result of multiplication is: " + result);
+        break;
+    case "/":
+        if (num2 === 0) {
+            console.log("Error: Division by zero is not allowed.");
+        } else {
+            var result = num1 / num2;
+            console.log("The result of division is: " + result);
+        }
+        break;
+    default:
+        console.log("Invalid operation. Please choose from +, -, *, /.");
+}
+
+
+var month = 1;
+
+    switch (month) {
+        case 1:
+        case 2:
+        case 12:
+            console.log("Winter");
+            break;
+        case 3:
+        case 4:
+        case 5:
+            console.log("Spring");
+            break;
+        case 6:
+        case 7:
+        case 8:
+            console.log("Summer");
+            break;
+        case 9:
+        case 10:
+        case 11:
+            console.log("Fall (Autumn)");
+            break;
+        default:
+            console.log("Invalid month number. Please enter a number between 1 and 12.");
+    }
+
+
+
+var vehicle = "Car";
+
+vehicle = vehicle.toLowerCase();
+    switch (vehicle) {
+        case "car":
+            console.log("You selected a Car.");
+            break;
+        case "bike":
+            console.log("You selected a Bike.");
+            break;
+        case "bus":
+            console.log("You selected a Bus.");
+            break;
+        default:
+            console.log("Invalid vehicle type. Please enter a valid vehicle type.");
+    }
+
+ 
+var char = 'a'; 
+
+char = char.toLowerCase();
+
+switch (char) {
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+        console.log(char + " is a vowel.");
+        break;
+    default:
+        if (char.length === 1 && /[a-z]/.test(char)) {
+            console.log(char + " is a consonant.");
+        } else {
+            console.log("Invalid input. Please enter a valid alphabet character.");
+        }
 }
 
 
 
-// Logical Operators AND &&, OR||
-// Arithmetic Operators
-// Increment,Decrement
-// Addition +=, Subtraction -=
-// Division /
-// Modulo %
 
-// Conditional Statements
-// if-else
-// switch
+
+
+
+
+
