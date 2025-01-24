@@ -13,7 +13,7 @@
     height: 100vh;
 }
 
-.header{
+.header {
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
 }
 
@@ -23,21 +23,24 @@
     display: flex;
     height: 75px;
     background-color: #ffffff;
+    align-items: center;
 }
 
 .logo {
     flex-grow: 1;
     display: flex;
     align-items: center;
+    height: 100%;
+    /* border: 1px solid red; */
 }
 
 .imageStyle {
-    width: 55%;
+    width: 50%;
     height: 60%;
 }
 
 .navigations {
-    flex-grow: 3;
+    flex-grow: 2;
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -57,18 +60,19 @@
 .navigations ul li {
     cursor: pointer;
 }
+
 .navigations>ul li sup {
-   font-weight: 600;
-   font-size: 10px;
-   color: rgb(255, 63, 108);
-   margin-left: 4px;
+    font-weight: 600;
+    font-size: 10px;
+    color: rgb(255, 63, 108);
+    margin-left: 4px;
 }
 
 .search {
-    flex-grow: 7;
+    flex-grow: 5;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .search-inner {
@@ -84,7 +88,7 @@
     background-color: #ffffff;
 }
 
-.fa-magnifying-glass {
+.search .search-inner i {
     font-size: 15px;
     color: gray;
     margin-right: 20px;
@@ -113,7 +117,8 @@
     align-items: center;
     flex-direction: column;
 }
-.inner-menu fa{
+
+.inner-menu fa {
     font-size: 16px;
     font-weight: 400;
     color: rgb(40, 44, 63);
@@ -125,4 +130,77 @@
     font-weight: 700;
     font-size: 12px;
     margin-top: 5px;
+}
+
+.arrow {
+    display: none;
+}
+
+.overview {
+    display: none;
+}
+.menu > :nth-child(2){
+    display: none;
+}
+
+@media (max-width:450px) {
+    .navbar {
+        height: 60px;
+        align-items: center;
+    }
+
+    .arrow {
+        display: block;
+        flex-grow: 0.5;
+    }
+
+    .overview {
+        display: block;
+        margin-left: 5px;
+    }
+
+    .logo {
+        flex-grow: 0;
+        justify-content: center;
+    }
+
+    .menu>div>i {
+        font-size: 21px;
+    }
+
+    .arrow i {
+        font-size: 25px;
+    }
+
+    .navigations {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .imageStyle {
+        width: 90%;
+        height: 45%;
+    }
+
+    .menu {
+        flex-grow: 4;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+    .menu > :nth-child(2){
+        display: block;
+    }
+    .menu > :nth-child(1){
+        display: none;
+    }
+    .menu >div >i{
+        color: #5b5d69;
+    }
+
+    .menu>div>a {
+        display: none;
+    }
 }

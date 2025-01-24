@@ -238,6 +238,18 @@ switch (char) {
 }
 
 
+// for(var i= 23; i%2==0; i++){
+//     console.log(i)
+// }
+
+var count = 0;
+for (var i = 43; i >= 11; i--) {
+  if (i % 2 === 0) {
+    count++;
+  }
+}
+console.log("Total even numbers:", count);
+
 
 
 
